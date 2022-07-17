@@ -1,5 +1,4 @@
 import * as UI from '@mui/material'
-import * as Icon from '@mui/icons-material'
 
 import { MenuLateral } from '../menu-lateral/MenuLateral'
 
