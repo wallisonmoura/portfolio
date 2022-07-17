@@ -13,7 +13,6 @@ import {
   SiYarn,
   SiMongodb,
   SiOracle,
-  // SiRedhatopenshift,
   SiStyledcomponents,
   SiMysql,
   SiEslint,
@@ -23,11 +22,11 @@ import {
 } from 'react-icons/si'
 import { FaMobileAlt, FaNode } from 'react-icons/fa'
 
-export const Habilidades = () => {
+export const Habilidades: React.FC = () => {
   const theme = UI.useTheme()
 
   return (
-    <UI.Stack width="100%" height="100%" gap={2}>
+    <UI.Stack display="flex" width="100%" gap={2}>
       <UI.Typography variant="h4">Habilidades</UI.Typography>
 
       <UI.Grid
@@ -108,10 +107,7 @@ export const Habilidades = () => {
           <SiMaterialui size="4rem" color={theme.palette.text.primary} />
           <UI.Typography>Material-UI</UI.Typography>
         </UI.Grid>
-        {/* <UI.Grid item xs={6} sm={4} md={2}>
-              <SiRedhatopenshift size="4rem" color={theme.palette.text.primary}/>
-              <UI.Typography>Red Hat Openshift</UI.Typography>
-            </UI.Grid> */}
+
         <UI.Grid item xs={6} sm={4} md={2}>
           <SiEslint size="4rem" color={theme.palette.text.primary} />
           <UI.Typography>Eslint</UI.Typography>

@@ -1,8 +1,8 @@
 import * as UI from '@mui/material'
 
-export const Sobre = () => {
+export const Sobre: React.FC = () => {
   return (
-    <UI.Stack width="100%" height="100%" gap={2}>
+    <UI.Stack width="100%" height="97.5vh" gap={2}>
       <UI.Typography variant="h4">Sobre</UI.Typography>
 
       <UI.Typography>

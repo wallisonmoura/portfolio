@@ -9,14 +9,16 @@ interface ILayoutProps {
 export const Layout: React.FC<ILayoutProps> = ({ children }) => {
   const theme = UI.useTheme()
   const smDown = UI.useMediaQuery(theme.breakpoints.down('sm'))
+  const mdDown = UI.useMediaQuery(theme.breakpoints.down('md'))
   return (
     <>
       <MenuLateral />
 
       <UI.Stack
-        marginTop={smDown ? theme.spacing(4) : 0}
+        marginTop={smDown ? theme.spacing(6) : 0}
         marginLeft={smDown ? 0 : theme.spacing(28)}
-        padding={2}
+        padding={theme.spacing(2)}
+        height={mdDown ? 'auto' : '100vh'}
       >
         {children}
       </UI.Stack>

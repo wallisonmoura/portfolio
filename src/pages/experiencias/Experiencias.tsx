@@ -1,14 +1,15 @@
 import * as UI from '@mui/material'
 
-export const Experiencias = () => {
+export const Experiencias: React.FC = () => {
   const theme = UI.useTheme()
+  const mdDown = UI.useMediaQuery(theme.breakpoints.down('md'))
   return (
     <UI.Stack width="100%" height="100%" gap={2}>
       <UI.Typography variant="h4">Experiências</UI.Typography>
       <UI.Stack>
         <UI.Stack
           width="100%"
-          flexDirection="row"
+          flexDirection={mdDown ? 'column' : 'row'}
           justifyContent="space-between"
         >
           <UI.Typography variant="h6">Desenvolvedor Pleno</UI.Typography>
@@ -34,7 +35,7 @@ export const Experiencias = () => {
       <UI.Stack>
         <UI.Stack
           width="100%"
-          flexDirection="row"
+          flexDirection={mdDown ? 'column' : 'row'}
           justifyContent="space-between"
         >
           <UI.Typography variant="h6">
@@ -59,7 +60,7 @@ export const Experiencias = () => {
       <UI.Stack>
         <UI.Stack
           width="100%"
-          flexDirection="row"
+          flexDirection={mdDown ? 'column' : 'row'}
           justifyContent="space-between"
         >
           <UI.Typography variant="h6">

@@ -1,6 +1,6 @@
 import * as UI from '@mui/material'
 
-export const Educacao = () => {
+export const Educacao: React.FC = () => {
   const theme = UI.useTheme()
   return (
     <UI.Stack width="100%" height="100%" gap={2}>
