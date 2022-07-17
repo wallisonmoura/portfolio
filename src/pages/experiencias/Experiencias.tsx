@@ -20,7 +20,7 @@ export const Experiencias: React.FC = () => {
           variant="body1"
           fontWeight={theme.typography.fontWeightBold}
         >
-          Microcis - Secretária de Defesa Social/PE
+          Transformatio Technology Eireli - Secretária de Defesa Social/PE
         </UI.Typography>
         <UI.Typography variant="body1">
           Criação de protótipos de novos projetos utilizando o figma,
